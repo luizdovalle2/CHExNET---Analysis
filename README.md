@@ -29,7 +29,7 @@ Expected layout:
 
 ## Code in this repo
 - `CHExNet_creation.ipynb`  
-  Creates the CHExNet dataset from the matched source tables by (1) generating a half‑year time index (`timeidfinal.pkl`), (2) constructing sparse adjacency matrices per time slice via group co-membership for **layer 1** (CAC events / institutional co-presence) and **layer 2** (bibliographic co-mentions / ALMA-derived data), and (3) exporting the combined multilayer structure to `CHExNet.pkl`.
+  Creates the CHExNet dataset from the matched source tables by (1) generating a half‑year time index (`time_id_final.pkl`), (2) constructing sparse adjacency matrices per time slice via group co-membership for **layer 1** (CAC events / institutional co-presence) and **layer 2** (bibliographic co-mentions / ALMA-derived data), and (3) exporting the combined multilayer structure to `CHExNet.pkl`.
 
 - `CHExNet_properties_exploarion.ipynb`  
   Loads the CHExNet data, constructs the graphs, and computes aggregated + temporal network metrics (e.g., LCC size, density / mean degree, clustering, assortativity).
