@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 from itertools import combinations
-from typing import Any
 import networkx as nx
 import numpy as np
 from concurrent.futures import ProcessPoolExecutor, as_completed
