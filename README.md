@@ -29,13 +29,13 @@ Expected layout:
 
 ## Code in this repo
 - `CHExNet_creation.ipynb`  
-  Creates the CHExNet dataset from the matched source tables by (1) generating a half‑year time index (`time_id_final.pkl`), (2) constructing sparse adjacency matrices per time slice via group co-membership for **layer 1** (CAC events / institutional co-presence) and **layer 2** (bibliographic co-mentions / ALMA-derived data), and (3) exporting the combined multilayer structure to `CHExNet.pkl`. Use this notebook to create CHExNet from the independent CAC and ALMA bases
+  Creates the CHExNet dataset from the matched source tables by (1) generating a half‑year time index (`time_id_final.pkl`), (2) constructing sparse adjacency matrices per time slice via group co-membership for **layer 1** (CAC events / institutional co-presence) and **layer 2** (bibliographic co-mentions / ALMA-derived data), and (3) exporting the combined multilayer structure to `CHExNet.pkl`. **Use this notebook to create CHExNet from the independent CAC and ALMA bases**
 
 - `CHExNet_properties_exploarion.ipynb`  
-  Loads the CHExNet data, constructs the graphs, and computes aggregated + temporal network metrics (e.g., LCC size, density / mean degree, clustering, assortativity). Use this notebook to generate plots from Section 3 Descriptive Statistics of CHExNet
+  Loads the CHExNet data, constructs the graphs, and computes aggregated + temporal network metrics (e.g., LCC size, density / mean degree, clustering, assortativity). **Use this notebook to generate plots from Section 3 Descriptive Statistics of CHExNet**
 
 - `CHExNet_contagion_analysis.ipynb`  
-  Runs the diffusion/contagion application: builds person-year exposure variables from both layers, constructs risk sets (pre-adoption person-years), summarizes exposure sparsity, fits discrete-time hazard models using Firth logistic regression (single-layer, collapsed, and multiplex with interaction), and exports result tables/figures. Use this notebook to generate tables and figure for Section 4.
+  Runs the diffusion/contagion application: builds person-year exposure variables from both layers, constructs risk sets (pre-adoption person-years), summarizes exposure sparsity, fits discrete-time hazard models using Firth logistic regression (single-layer, collapsed, and multiplex with interaction), and exports result tables/figures. **Use this notebook to generate tables and figure for Section 4.**
 
 - `net_properties_funcs.py`  
   Utility functions used by the notebook: build rolling-window temporal graphs, extract the giant component, compute summary metrics, and run metric series in parallel (with `tqdm` progress bars).
